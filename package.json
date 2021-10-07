@@ -1,0 +1,35 @@
+{
+  "name": "jest-demo",
+  "version": "1.0.0",
+  "description": "demo using jest",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njmaeff/jest-eslint-demo.git"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/preset-env": "^7.15.6",
+    "@types/jest": "^27.0.2",
+    "jest": "^27.2.4"
+  },
+  "jest": {
+    "testEnvironment": "jsdom"
+  },
+  "babel": {
+    "env": {
+      "test": {
+        "presets": [
+          [
+            "@babel/preset-env",
+            {
+              "modules": "auto"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}
